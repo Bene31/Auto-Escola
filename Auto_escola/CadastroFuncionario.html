@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<title>AutoCar</title>
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+<script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
+<script src="js/main.js"></script>
+<script src="js/js.js"></script>
+<link href="css/font-awesome.css" rel="stylesheet"> 
+<link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+<link rel="stylesheet" href="css/flexslider.css" type="text/css" media="screen" property="" />
+<link href="//fonts.googleapis.com/css?family=Prompt:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&amp;subset=latin-ext,thai,vietnamese" rel="stylesheet">
+</head>
+<body>
+	<div class="header">
+		<div class="header_left">
+			<ul>
+				<li><span class="glyphicon glyphicon-map-marker" aria-hidden="true"></span>Juiz de Fora - MG</li>
+				<li><span class="glyphicon glyphicon-earphone" aria-hidden="true"></span>(32) 3232-3232</li>
+			</ul>
+		</div>
+		<div class="header_right">
+				<div class="cd-main-header">
+					<a class="cd-search-trigger" href="#cd-search"> <span></span></a>
+					
+				</div>
+				<div id="cd-search" class="cd-search">
+					<form action="#" method="post">
+						<input name="search" type="search" placeholder="Pesquisar...">
+					</form>
+				</div>
+			</div>
+		</div>
+			<div class="clearfix"></div>
+		
+		<div class="header-bottom">
+		<nav class="navbar navbar-default">
+			<div class="navbar-header navbar-left">
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+					<span class="sr-only"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<h1><a href="index.html"><img src="images/logo.png" alt=" " class="img-responsive"/><br></a></h1>
+			</div>
+
+			<div class="collapse navbar-collapse navbar-right" id="bs-example-navbar-collapse-1">
+				<nav class="link-effect-2" id="link-effect-2">
+					<ul class="nav navbar-nav">
+						<li class="active"><a href="index.html"><span data-hover="Página Inicial">Página Inicial</span></a></li>
+						<li><a href="#.html"><span data-hover="Sobre">Sobre</span></a></li>
+						<li><a href="#.html"><span data-hover="Aulas">Aulas</span></a></li>
+						<li><a href="#.html"><span data-hover="Contato">Contato</span></a></li>
+                                                <li><a href="#.html"><span data-hover="Area do Aluno">Area do Aluno</span></a></li>
+                                                <li><a href="#.html"><span data-hover="Area do Funcionario">Area do Funcionario</span></a></li>
+                                        </nav>
+			</div>
+			<div class="agileinfo-social-grids">
+				<ul>
+					<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+					<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+					<li><a href="#"><i class="fa fa-instagram"></i></a></li>
+				</ul>
+			</div>
+		</nav>
+	</div>
+	
+	<div class="w3l-heading">
+            <h2 class="w3ls_head">Cadastro de Funcionarios</h2>
+	</div>
+         <div class="register">
+		<div class="container">               
+        <div class ="col-md-6 w3layouts_register_right">
+           
+        <form method="POST" action="cadastroAluno.php">
+           
+            <h3>Dados Pessoais</h3><br>
+            <h4 id="h4.-bootstrap-heading">Nome: <input type="text" name="nome" id="nome" required="required"></h4><br>
+            <h4 id="h4.-bootstrap-heading">CPF: <input type="text" name="cpf"  id="cpf" required="required" onkeypress="return SomenteNumero(event) && mascara(this, '###.###.###-##')" maxlength="14"></h4><br>
+            <h4 id="h4.-bootstrap-heading">RG: <input type="text" name="rg" id="rg" required="required" onkeypress="return SomenteNumero(event) && mascara(this, '##.###.###')" maxlength="10"></h4><br>
+            <h4 id="h4.-bootstrap-heading">Data Nascimento: <input type="date" name="nasc" id="nasc" required max="2000-12-31"></h4><br>
+            <h4 id="h4.-bootstrap-heading">Sexo: 
+                <input type="radio" name="sexo" id="sexo" value="Masculino" checked align = "center">Masculino 
+                <input type="radio" name="sexo" id="sexo" value="Feminino" align = "center">Feminino<br>
+            </h4><br>
+                     
+                 <h3>Informações de Contato</h3><br>
+                    <br><h4 id="h4.-bootstrap-heading">Telefone: <input type="text" name="telefone" id="telefone" required="required" onkeypress="return SomenteNumero(event) && mascara(this, '## ####-####')" maxlength="12"></h4><br>
+                    <br><h4 id="h4.-bootstrap-heading">Celular: <input type="text" name="celular" id="celular" required="required" onkeypress="return SomenteNumero(event) && mascara(this, '## #####-####')" maxlength="13"></h4><br>
+                    <br><h4 id="h4.-bootstrap-heading">Email: <input type="email" id="email" required="required" class="input-text" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"/></h4><br>
+               
+                    <h3> Dados de Endereçamento </h3><br>
+                    <h4 id="h4.-bootstrap-heading">Rua<input type="text" name="rua" id="rua" required="required"></h4><br>
+                    <h4 id="h4.-bootstrap-heading">Bairro<input type="text" name="bairro" id="bairro" required="required"></h4><br>
+                    <h4 id="h4.-bootstrap-heading">Número<input type="text" name="numero" id="numero" required="required"></h4><br>
+                    <h4 id="h4.-bootstrap-heading">Complemento<input type="text" name="complemento" id="complemento" required="required"></h4><br>
+                    <h4 id="h4.-bootstrap-heading">CEP<input type="text" name="cep" id="cep" required="required" onkeypress="return SomenteNumero(event) && mascara(this, '#####-###')" maxlength="9"></h4><br>
+                    <h4 id="h4.-bootstrap-heading">Estado
+                        <select name="estado" id="estado"> 
+                            <option value="estado">Selecione o Estado</option> 
+                            <option value="AC">Acre</option> 
+                            <option value="AL">Alagoas</option> 
+                            <option value="AM">Amazonas</option> 
+                            <option value="AP">Amapá</option> 
+                            <option value="BA">Bahia</option> 
+                            <option value="CE">Ceará</option> 
+                            <option value="DF">Distrito Federal</option> 
+                            <option value="ES">Espírito Santo</option> 
+                            <option value="GO">Goiás</option> 
+                            <option value="MA">Maranhão</option> 
+                            <option value="MT">Mato Grosso</option> 
+                            <option value="MS">Mato Grosso do Sul</option> 
+                            <option value="MG">Minas Gerais</option> 
+                            <option value="PA">Pará</option> 
+                            <option value="PB">Paraíba</option> 
+                            <option value="PR">Paraná</option> 
+                            <option value="PE">Pernambuco</option> 
+                            <option value="PI">Piauí</option> 
+                            <option value="RJ">Rio de Janeiro</option> 
+                            <option value="RN">Rio Grande do Norte</option> 
+                            <option value="RO">Rondônia</option> 
+                            <option value="RS">Rio Grande do Sul</option> 
+                            <option value="RR">Roraima</option> 
+                            <option value="SC">Santa Catarina</option> 
+                            <option value="SE">Sergipe</option> 
+                            <option value="SP">São Paulo</option> 
+                            <option value="TO">Tocantins</option> 
+                        </select></h4><br>
+                    <h4 id="h4.-bootstrap-heading">Cidade<input type="text" name="cidade" id="cidade" required="required"></h4><br>
+                
+                    <h3> Dados da Habilitação </h3><br>
+                        <h4 id="h4.-bootstrap-heading">Placa <input type="text" name="placa"  id="placa" required="required" onkeypress="return mascara(this, '###-####')" maxlength="8"></h4><br>
+                        <h4 id="h4.-bootstrap-heading">Função 
+                            <select size="1" name="funcao" id="funcao">
+                                <option>Atendente</option>
+                                <option>Professor de Leis</option>
+                                <option>Professor de Carros</option>
+                            </select>
+                        </h4><br>
+                        <h4 id="h4.-bootstrap-heading">Senha<input type="password" name="senha" id="senha" required="required" maxlength="32"></h4><br>
+                        <h4 id="h4.-bootstrap-heading"><input type="submit" value="Cadastrar" id="cadastrar" name="cadastrar"></h4>
+        </form>       
+            </div>
+                    <div class="col-md-6 w3layouts_register_left">
+                        <h1><img src="images/logo.png" alt=" " class="img-responsive"><br></h1>
+				<p>Aliquam sit amet sapien felis. Proin vel dolor sed risus maximus gravida. 
+					Ut suscipit orci sem, eget lobortis sem dictum eu. Etiam congue ex sed volutpat fringilla.</p>
+			</div>
+			<div class="clearfix"> </div>
+		</div>
+	</div>
+    </body>
+</html>
