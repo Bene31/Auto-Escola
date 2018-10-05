@@ -41,7 +41,7 @@
 		?>
                         <tr>
                             <td> <?php echo $row["id"]; ?></td>
-                            <td><?php echo $row["nome"]; ?></td>
+                            <td><?php echo $row["nome_aluno"]; ?></td>
                             <td><?php echo $row["cpf"]; ?></td>
                             <td> <?php echo $row["rg"]; ?></td>
                             <td><?php echo $row["nasc"]; ?></td>

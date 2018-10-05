@@ -41,7 +41,7 @@ $logarray = $array['cpf'];
         die();
  
       }else{
-        $query = "INSERT INTO aluno (nome, cpf, rg, nasc, sexo, telefone, celular, email, rua, bairro, numero, complemento, cep, estado, cidade, tipo) VALUES ('$nome', '$cpf', '$rg', '$nasc', '$sexo', '$telefone', '$celular', '$email', '$rua', '$bairro', '$numero', '$complemento', '$cep', '$estado', '$cidade', '$tipo')";
+        $query = "INSERT INTO aluno (nome_aluno, cpf, rg, nasc, sexo, telefone, celular, email, rua, bairro, numero, complemento, cep, estado, cidade, tipo) VALUES ('$nome', '$cpf', '$rg', '$nasc', '$sexo', '$telefone', '$celular', '$email', '$rua', '$bairro', '$numero', '$complemento', '$cep', '$estado', '$cidade', '$tipo')";
         $insert = mysqli_query($connect, $query);
          
         if($insert){

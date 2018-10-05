@@ -95,7 +95,7 @@
 			<div class="col-xs-6 w3_banner_bottom_icons1">
                             
                             <div class="w3_banner_bottom_icons1_effect">
-					<i class="far fa-clock"></i>
+					<a href="agenda.php"><i class="far fa-clock"></i></a>
 					<h3>Horários</h3>
 					<p>Curabitur ac enim et augue consectetur elementum sed vitae neque.</p>
                             </div>

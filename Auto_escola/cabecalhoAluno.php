@@ -51,12 +51,12 @@
 			<div class="collapse navbar-collapse navbar-right" id="bs-example-navbar-collapse-1">
 				<nav class="link-effect-2" id="link-effect-2">
 					<ul class="nav navbar-nav">
-						<li class="active"><a href="index.html"><span data-hover="Página Inicial">Página Inicial</span></a></li>
+						<li class="active"><a href="index.php"><span data-hover="Página Inicial">Página Inicial</span></a></li>
 						<li><a href="#.html"><span data-hover="Sobre">Sobre</span></a></li>
 						<li><a href="#.html"><span data-hover="Aulas">Aulas</span></a></li>
 						<li><a href="#.html"><span data-hover="Contato">Contato</span></a></li>
-                                                <li><a href="#.html"><span data-hover="Area do Aluno">Area do Aluno</span></a></li>
-                                                <li><a href="#.html"><span data-hover="Area do Funcionario">Area do Funcionario</span></a></li>
+                                                <li><a href="#.php"><span data-hover="Area do Aluno">Area do Aluno</span></a></li>
+                                                <li><a href="#.php"><span data-hover="Area do Funcionario">Area do Funcionario</span></a></li>
                                         </nav>
 			</div>
 			<div class="agileinfo-social-grids">
@@ -64,6 +64,7 @@
 					<li><a href="#"><i class="fa fa-facebook"></i></a></li>
 					<li><a href="#"><i class="fa fa-twitter"></i></a></li>
 					<li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                                        <li><a href="logoutAluno.php">logout</a></li>
 				</ul>
 			</div>
 		</nav>

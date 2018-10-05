@@ -1,11 +1,11 @@
 <?php
 if(!function_exists("protect")){
     function protect(){
-        if(!isset($_SESSION))
+        if(!isset($_COOKIE))
             session_start();
         
-        if(!isset($_SESSION['cpf']) || !is_numeric($_SESSION['cpf'])){
-            header("Location: loginFuncionario.html");
+        if(!isset($_COOKIE['cpf']) || !is_numeric($_COOKIE['cpf'])){
+            header("Location: loginFuncionario.php");
         }
     }
 }
