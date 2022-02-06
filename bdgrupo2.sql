@@ -46,19 +46,6 @@ create table funcionario(
 insert into funcionario (nome, cpf, rg, nasc, sexo, telefone, celular, email, rua, bairro, numero, complemento, cep, estado, cidade, placa, funcao, senha) values 
 ('admin', '000.000.000-00', '00.000.000', str_to_date('20-01-1985', '%d-%m-%Y'), 'Masculino', '32 0000-0000', '32 90000-0000', 'admin@gmail.com', 'Oliveira', 'Oliveira', '400', '', '00000-000', 'MG', 'Juiz de Fora', '', 'Atendente', 'root');
 
-
-create table agenda(
-	id int not null auto_increment primary key,
-    aula enum('carro', 'moto', 'outros'),
-    id_motorista int not null,
-    id_aluno int not null,
-    data_aula date not null,
-    id_hora time,
-    constraint fk_agenda_prof foreign key(id_motorista) references funcionario(id) on delete cascade on update cascade,
-    constraint fk_agenda_aluno foreign key(id_aluno) references aluno(id) on delete cascade on update cascade,
-    constraint fk_agenda_horario foreign key(id_hora) references horario(id_hora) on delete cascade on update cascade
-);
-
 create table horario(
 	id int not null auto_increment primary key,
     hora time
@@ -75,3 +62,15 @@ insert into horario (hora) values("17:00");
 insert into horario (hora) values("18:00");
 insert into horario (hora) values("19:00");
 insert into horario (hora) values("20:00");
+
+create table agenda(
+	id int not null auto_increment primary key,
+    aula enum('carro', 'moto', 'outros'),
+    id_motorista int not null,
+    id_aluno int not null,
+    data_aula date not null,
+    id_hora int,
+    constraint fk_agenda_prof foreign key(id_motorista) references funcionario(id) on delete cascade on update cascade,
+    constraint fk_agenda_aluno foreign key(id_aluno) references aluno(id) on delete cascade on update cascade,
+    constraint fk_agenda_horario foreign key(id_hora) references horario(id) on delete cascade on update cascade
+);
